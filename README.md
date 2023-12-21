@@ -13,12 +13,12 @@ Analysis of distributor behavior impact on revenue for the whole business can be
 ![global_shap](https://github.com/dkwik/business-revenue-analysis/assets/89932747/0aa53d08-0f6d-4fda-ad3d-f9c730427309)
 
 ### Impact on individual distributor (Local explanations)
-The value in a tree-based model means that we can also see explanations at a localized level, i.e a single distributor, useful for tactical business decisions, such as account management. Here we see the tornado showing the impact of metrics on a single distributor's revenue, compared to the expected average across all distributors.
+One of the valuable things about using a tree-based model is that we can also see explanations at a localized level, i.e a single distributor, useful for tactical business decisions, such as account management. Here we see the waterfall showing the impact of metrics on a single distributor's revenue, compared to the expected average across all distributors.
 
 ![waterfall_shap](https://github.com/dkwik/business-revenue-analysis/assets/89932747/2785abd9-9cee-43b2-a2e2-b06fd7e92334)
 
 ### Creation of interactive yearly explanations
-Limitation of SHAP package is that waterfall charts analyze a distirbutor vs average over all distributors. Here we devise a way to analyze shap impact between a distributor and their own performance last year. In the code, an interactive plotly plot is created to visualize the impact of a distributor's behavior on revenue between 2022 vs 2023.
+A limitation of the SHAP package is that waterfall charts confine the visual to compare a a single prediction (i.e one distributor) to the average over all predictions (i.e avg. of all distributors). What if we want to compare a single prediction to itself from a prior time period? Here we devise a way to analyze shap impact between a distributor and their own performance last year. In the code, an interactive plotly plot is created to visualize the impact of a distributor's behavior on revenue between 2022 vs 2023.
 
 ![waterfall_interactive](https://github.com/dkwik/business-revenue-analysis/assets/89932747/ae8f455a-c87a-4180-b740-ebd3649579d2)
 
